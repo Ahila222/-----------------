@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Прайс лист ::
+		Йокохама: суши-бар</title>
+		<link href="../styles/2.1.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<header>
+			<h1>Суши бар<br><em>&laquo;Йокохама&raquo;</em></h1>
+		</header>
+		<nav class="panel1">
+			<div><a href="../index.html">Главная</a></div>
+			<div><a href="sashimi_i_shini.html">Сашими и шины</a></div>
+			<div><a href="sushi.html">Суши</a></div>
+			<div><a href="rolls.html">Роллы</a></div>
+			<div><a href="order.html">Заказ столиков</a></div>
+			<div><a href="takeaway.html">Заказ еды на вынос</a></div>
+			<div><a href="../index.html#addres1">Наш адрес</a></div>
+		</nav>
+		<main>
+				<table class="pricelist"><!--парный тег создает таблицу-->
+				<caption><strong>Прайс-лист</strong></caption><!--парный тег, задает название таблицы. Автоматически выравнивает текст по ширине, шрифт тот же,
+				что и в ячейках-->
+				<thead><!--парный тег, задает шапку таблицы для применения к ней стилей-->
+					<tr><th>Товар</th><th>Цена, руб.</th></tr><!--парный тег "tr" создает строку таблицы, "th" - создает ячейку шапки таблицы-->
+				</thead>
+				<tbody><!--парный тег, задает тело таблицы, для применения стилей-->
+					<tr><th colspan="2">Суши</th></tr><!--атрибут colspan поддерживаемый тегами th и td, указывате количество ячеек строки,
+					подвергаемых слиянию по горизонтали-->
+					<tr><td>Чукка</td><td>40</td></tr>
+					<tr><td>Магуро</td><td rowspan="2">80</td></tr>
+					<tr><td>Тобико</td></tr>
+					<tr><th colspan="2">Сашими</th></tr>
+					<tr><td>Унаги</td><td>340</td></tr>
+					<tr><td>Хамачи</td><td>400</td></tr>
+					<tr><th colspan="2">Роллы</th></tr>
+					<tr><td>Кунсэй батакон</td><td rowspan="3">360</td></tr>
+					<tr><td>Аригато</td></tr>
+					<tr><td>Мексиканский</td></tr>
+					<tr><th colspan="2">Шины</th></tr>
+					<tr><td>Yokohama 215-65-r14</td><td>5150</td></tr>
+				</tbody>
+				<tfoot><!--праный тег, задает пооддон таблицы, для применения стилей-->
+					<tr><td colspan="2">Всего 9 наименований</td></tr>
+				</tfoot>
+			</table>
+		</main>
+		<footer>
+		<p>&copy; читатель книги &laquo;HTML и CSS&raquo;<br>Все права защищены.</p>
+		<footer>
+	</body>
+</html>

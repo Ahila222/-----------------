@@ -1,0 +1,143 @@
+﻿body {
+	font-family: Times New Roman;
+	color: coral;
+	background-color: gray;/*устанавливаем цвет фона*/
+	background-image: url(fon.jpg);/*устанавливаем в качестве фона картинку (располагается в папке с таблицей css)*/
+	background-size: 100% auto;/*устанавливаем размер картинки, по длинне - на 100% экрана, по ширине - автоматически*/
+	background-repeat: no-repeat;/*установка повторения картинки по горизонтали и вертикали. Тут - картинка не повторяется*/
+	background-attachment: fixed;/*прокручивается картинка или нет. Тут - не прокручивается*/
+	}
+	/*так можно писать в CSS коментарии*/
+
+header {text-align: center;}
+	
+main {text-align: justify;}/*выравнивание шрифта по ширине*/
+	
+footer {text-align: left;}
+		
+h1 {font-family: Monotype Corsiva;
+	font-size: 32pt;
+	font-weight: 900;
+	color: gainsboro;
+	text-shadow: 3px 3px 5px black;/*тень у текста 0 - смещение по оси х, 5px - смещение по оси у, 10рх - радиус размытия*, black - цвет тени*/
+	/*font-weight: normal;*//*задает для заголовка нормальную жирность текста*/
+	}
+	
+a {color: coral;}/*цвет гиперссылки*/
+
+a:visited {color: bisque;}/*цвет посещенной гиперссылки*/
+		
+p {font-size: 14pt;}/*если мы после размера шрифта допишем "!important", весь текст в абзаце,
+	вне зависимости от того, что мы прописываем далее, будет высотой 14 кегля*/
+		
+.picture {text-align: center;}
+	
+.picture img {width: 67%;}/*это составной селектор, .picture - расположен слева, указывает на
+	элемент со стелевым классом picture, селектор img указывает на изображение, находится справа.
+	Пробел - есть разделитель между селекторами*//*атрибут стиля width задает ширину элемента страницы,
+	т.е. изображение суши будет занимать 67% страницы*/
+p.picture1 {text-align: center;}
+	
+p.greeting {font-size: 24pt;
+	text-align: center;}
+	
+span.h21 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 20pt;
+	text-align: center;
+	text-shadow: 3px 3px 5px black;
+}
+
+p.h31 {
+	color: LightCyan;
+	font-size: 14pt;
+	text-shadow: 3px 3px 5px black;
+}
+
+.adres1 {
+	color: LightCyan;
+	font-size: 14pt;
+	text-shadow: 3px 3px 5px black;
+	box-shadow: 0 0 5px black;
+}
+	
+.advertising {margin-left: 30pt;} /*задает отступ слева в кеглях*/
+	
+.advertising1 {font-size: 12pt; /*задает размер шрифта в кеглях*/
+	margin-top: 5pt;
+	margin-bottom: 5 pt;}
+
+.advertising2 {font-size: 12pt;
+	margin-top: 5pt;
+	margin-bottom: 5 pt;}
+	
+.bigger {font-size: 16pt;}
+	
+.bigger1 {font-size: 14pt;}
+	
+table.pricelist th, table.pricelist td {
+		border: grey thin solid;
+		padding: 4px;
+	}/*создали стиль для таблицы: два составных селектора table.pricelist th (ячейки шапки, вложенные в таблицу со стилевым классом pricelist)
+	и table.pricelist td (обычные ячейки, вложенные в такую же таблицу) указанные через запятую. Атрибут стиля border создает рамку, рисуемую по границе
+	элемента страницы - ячейки. Его значение grey указывает создать серую thin - тонкую рамку из solid - сплошных линий*/
+	
+table.catalog td {
+		border-top: black thin dotted; /*создали пунктирную черную линию, отделяющую строки в таблице*/
+		border-bottom: black thin dotted;
+		padding: 10px;
+	}
+table.catalog img {width: 336px;} /*задали ширину рисунков, встроенных в таблицу в 336 пикселей*/
+	
+table.pricelist thead th {
+		color: white;
+		background-color: grey;
+	}
+	
+tfoot {
+		font-style: italic;
+		text-align: right;
+	}
+	
+nav.panel {
+		float: down;
+		width: 200px;
+		margin: 10px 30px 10px 0px;
+		padding: 10px;
+		border: black medium double;
+		border-radius: 10px;
+	}
+	/*для панели навигации создали стиль: атрибут стиля float со значением left(right, down) делает элемент страницы врезкой, выводящейся у левого края
+	его родителя(в нашем случае - страницы), в то время как содержимое других элементов будет ее обтекать слева (справа, снизу). Одновременно необходимо
+	задать ширину врезки (widh) в 150 пикселей (подобрано экспериментально). 
+	Атрибут margin указывает велечины "внешних" просветов между врезкой и соседними элементами: 10 пикселей сверху, 30 - справа, 10 - снизу, 0 - слева.
+	Атрибут padding указывает просвет между рамкой и содержимым элемента в 10 пикселей.
+	Атрибут стиля border создаст у панели навигации черную (black) средней толщины (medium) рамку из двойных (double) линий. 
+	Атрибут стиля border-radius со значением 10 пикселей создаст радиус скругления углов этой рамки в 10 пикселей.*/
+	
+nav.panel1 {
+		float: left;
+		width: 200px;
+		margin: 10px 30px 10px 0px;
+		padding: 10px;
+		border: black medium double;
+		border-radius: 10px;
+	}
+	
+nav.panel2 {
+		float: left;
+		width: 200px;
+		margin: 10px 30px 10px 0px;
+		padding: 10px;
+		border: black medium double;
+		border-radius: 10px;
+	}
+	
+nav div {
+		font-size: 20px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	 
+	 

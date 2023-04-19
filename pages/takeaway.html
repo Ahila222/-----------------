@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Заказ еды на вынос ::
+		Йокохама: суши-бар</title>
+		<link href="../styles/2.1.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<header>
+			<h1>Суши бар<br><em>&laquo;Йокохама&raquo;</em></h1>
+		</header>
+		<nav class="panel1">
+			<div><a href="../index.html">Главная</a></div>
+			<div><a href="sashimi_i_shini.html">Сашими и шины</a></div>
+			<div><a href="sushi.html">Суши</a></div>
+			<div><a href="rolls.html">Роллы</a></div>
+			<div><a href="order.html">Заказ столиков</a></div>
+			<div><a href="../index.html#addres1">Наш адрес</a></div>
+		</nav>
+		<main>
+				<h2>Заказ столиков</h2>
+					<form action="mailto:ahila222@mail.ru" method="post" enctype="text/plain">
+						<p><label for="dishes">Что желаете заказать?</label><br>
+						<select name="dishes" id="dishes" size="5" multiple>
+							<optgroup label="Сашими"><!--парный тег, формирует группу списка-->
+								<option value="unagi">Унаги</option><!--парный тег, формирует пункт списка-->
+								<option value="hamachi">Хамачи</option>
+							</optgroup>
+							<optgroup label="Суши">
+								<option value="chukka">Чукка</option>
+								<option value="maguro">Магуро</option>
+								<option value="tobiko">Тобико</option>
+							</optgroup>
+							<optgroup label="Шины">
+								<option value="shini">Шины "Екохама"</option>
+							</optgroup>
+						</select></p>
+						<!--выше парным тегом "select" создали выпадающий список. Также, как и везде в таких случаях указали якорь, для связывания
+						надписи со списком.
+						Тег "select" поддерживает атрибуты: size - количество одновременно отображаемых строк;
+															multiple - дает возможность выбора пользователю произвольного количества пунктов из списка;
+						Тег "option" поддерживает атрибуты: value - значение, пересылаемое в составе данных формы;
+															selected - атрибут без значения, делает пункт изначально выбранным (может быть только у одного
+															пункта списка);
+															disabled - делает пункт недоступным для выбора
+						Тег "optgroup" поддерживает атрибуты: label - заголовок группы; disabled - без значения, делает все пункты группы недоступными-->
+						<label for="phone">По какому номеру Вам перезвонить?</label><br>
+						<input type="text" name="phone" id="phone" required></p>
+						<p><input type="submit"></p>
+					</form>
+		</main>
+		<footer>
+		<p>&copy; читатель книги &laquo;HTML и CSS&raquo;<br>Все права защищены.</p>
+		<footer>
+	</body>
+</html>
