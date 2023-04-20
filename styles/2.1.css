@@ -1,6 +1,7 @@
 ﻿body {
 	font-family: Times New Roman;
 	color: coral;
+	text-shadow: 3px 3px 5px black;
 	background-color: gray;/*устанавливаем цвет фона*/
 	background-image: url(fon.jpg);/*устанавливаем в качестве фона картинку (располагается в папке с таблицей css)*/
 	background-size: 100% auto;/*устанавливаем размер картинки, по длинне - на 100% экрана, по ширине - автоматически*/
@@ -86,8 +87,7 @@ table.pricelist th, table.pricelist td {
 	элемента страницы - ячейки. Его значение grey указывает создать серую thin - тонкую рамку из solid - сплошных линий*/
 	
 table.catalog td {
-		border-top: black thin dotted; /*создали пунктирную черную линию, отделяющую строки в таблице*/
-		border-bottom: black thin dotted;
+		border: black thin solid; /*создали пунктирную черную линию, отделяющую строки в таблице*/
 		padding: 10px;
 	}
 table.catalog img {width: 336px;} /*задали ширину рисунков, встроенных в таблицу в 336 пикселей*/
