@@ -26,9 +26,14 @@ h1 {font-family: Monotype Corsiva;
 	
 a {
 	color: coral;
+	text-decoration: none;
 	}/*цвет гиперссылки*/
 
-a:visited {color: bisque;}/*цвет посещенной гиперссылки*/
+a:visited {color: coral;}/*цвет посещенной гиперссылки*/
+
+a:hover {
+	color: brown;
+}
 		
 p {font-size: 14pt;}/*если мы после размера шрифта допишем "!important", весь текст в абзаце,
 	вне зависимости от того, что мы прописываем далее, будет высотой 14 кегля*/
@@ -138,12 +143,15 @@ nav {
 		background-image: url(fon_menu.jpg);
 		/*background-color: gray;*//*добавляет заливку элементу, после двоеточия указывается цвет*/
 		/*opacity: .9;*//*добавляет прозрачности элементу, от 0 (полностью прозрачный) до 1 (не прозрачный)*/
-		}
-
-div {
-		font-size: 20px;
-		margin-top: 5px;
-		margin-bottom: 5px;
 	}
-	 
-	 
+
+nav ul li {
+	list-style: none;
+	font-size: 16pt;
+	display: block;
+	transition: .3s;
+	}
+	
+nav ul li:hover {
+	transform: scale(1.2);
+	}
