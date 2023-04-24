@@ -106,36 +106,11 @@ tfoot {
 		font-style: italic;
 		text-align: right;
 	}
-	
-nav.panel {
-		float: down;
-		width: 200px;
-		margin: 10px 30px 10px 0px;
-		padding: 10px;
-		border: black medium double;
-		border-radius: 10px;
-	}
-	/*для панели навигации создали стиль: атрибут стиля float со значением left(right, down) делает элемент страницы врезкой, выводящейся у левого края
-	его родителя(в нашем случае - страницы), в то время как содержимое других элементов будет ее обтекать слева (справа, снизу). Одновременно необходимо
-	задать ширину врезки (widh) в 150 пикселей (подобрано экспериментально). 
-	Атрибут margin указывает велечины "внешних" просветов между врезкой и соседними элементами: 10 пикселей сверху, 30 - справа, 10 - снизу, 0 - слева.
-	Атрибут padding указывает просвет между рамкой и содержимым элемента в 10 пикселей.
-	Атрибут стиля border создаст у панели навигации черную (black) средней толщины (medium) рамку из двойных (double) линий. 
-	Атрибут стиля border-radius со значением 10 пикселей создаст радиус скругления углов этой рамки в 10 пикселей.*/
-	
-nav.panel1 {
-		float: left;
-		width: 200px;
-		margin: 10px 30px 10px 0px;
-		padding: 10px;
-		border: black medium double;
-		border-radius: 10px;
-	}
-	
+			
 nav {
 		float: left;
 		width: 200px;
-		margin: 10px 30px 10px 0px;
+		margin: 10px;
 		padding: 10px;
 		border: black medium double;
 		border-radius: 10px;
@@ -143,6 +118,11 @@ nav {
 		background-image: url(fon_menu.jpg);
 		/*background-color: gray;*//*добавляет заливку элементу, после двоеточия указывается цвет*/
 		/*opacity: .9;*//*добавляет прозрачности элементу, от 0 (полностью прозрачный) до 1 (не прозрачный)*/
+	}
+
+ul {
+	margin: 0;
+	padding: 0;
 	}
 
 nav ul li {
