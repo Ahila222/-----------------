@@ -1,20 +1,26 @@
 ﻿body {
 	font-family: Times New Roman;
-	color: coral;
-	text-shadow: 3px 3px 5px black;
+	color: rgb(224, 104, 60);
+	text-shadow: 1px 1px 2px black;
 	background-color: gray;/*устанавливаем цвет фона*/
 	background-image: url(fon.jpg);/*устанавливаем в качестве фона картинку (располагается в папке с таблицей css)*/
-	background-size: 100% auto;/*устанавливаем размер картинки, по длинне - на 100% экрана, по ширине - автоматически*/
+	background-size: 100% 100%;/*устанавливаем размер картинки, по длинне - на 100% экрана, по ширине - автоматически*/
 	background-repeat: no-repeat;/*установка повторения картинки по горизонтали и вертикали. Тут - картинка не повторяется*/
 	background-attachment: fixed;/*прокручивается картинка или нет. Тут - не прокручивается*/
 	}
 	/*так можно писать в CSS коментарии*/
 
-header {text-align: center;}
+header {
+	text-align: center;
+	}
 	
 main {text-align: justify;}/*выравнивание шрифта по ширине*/
 	
 footer {text-align: left;}
+
+footer a {
+	background-color: rgba(255, 228, 196, .3);
+	}
 		
 h1 {font-family: Monotype Corsiva;
 	font-size: 32pt;
@@ -25,11 +31,11 @@ h1 {font-family: Monotype Corsiva;
 	}
 	
 a {
-	color: coral;
+	color:rgb(90, 30, 8);
 	text-decoration: none;
 	}/*цвет гиперссылки*/
 
-a:visited {color: coral;}/*цвет посещенной гиперссылки*/
+a:visited {color:rgb(90, 30, 8);}/*цвет посещенной гиперссылки*/
 
 a:hover {
 	color: brown;
@@ -90,9 +96,13 @@ table.pricelist th, table.pricelist td {
 	}/*создали стиль для таблицы: два составных селектора table.pricelist th (ячейки шапки, вложенные в таблицу со стилевым классом pricelist)
 	и table.pricelist td (обычные ячейки, вложенные в такую же таблицу) указанные через запятую. Атрибут стиля border создает рамку, рисуемую по границе
 	элемента страницы - ячейки. Его значение grey указывает создать серую thin - тонкую рамку из solid - сплошных линий*/
-	
+
+.catalog {
+	background-color: rgba(255, 228, 196, .3);
+	}
+
 table.catalog td {
-		border: black thin solid; /*создали пунктирную черную линию, отделяющую строки в таблице*/
+		border: rgba(0, 0, 0, .3) thin solid; /*создали пунктирную черную линию, отделяющую строки в таблице*/
 		padding: 10px;
 	}
 table.catalog img {width: 336px;} /*задали ширину рисунков, встроенных в таблицу в 336 пикселей*/
@@ -101,6 +111,11 @@ table.pricelist thead th {
 		color: white;
 		background-color: grey;
 	}
+
+.giper {
+	margin-top: 40px;
+	background-color: rgba(255, 228, 196, .3);
+	}
 	
 tfoot {
 		font-style: italic;
@@ -108,27 +123,29 @@ tfoot {
 	}
 			
 nav {
-		float: left;
-		width: 200px;
-		margin: 10px;
-		padding: 10px;
-		border: black medium double;
-		border-radius: 10px;
-		box-shadow: 5px 5px 5px black;
-		background-image: url(fon_menu.jpg);
-		/*background-color: gray;*//*добавляет заливку элементу, после двоеточия указывается цвет*/
-		/*opacity: .9;*//*добавляет прозрачности элементу, от 0 (полностью прозрачный) до 1 (не прозрачный)*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 8%;
+	border: black medium double;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px black;
+	background-color: rgba(255, 228, 196, .3);
+	/*background-color: gray;*//*добавляет заливку элементу, после двоеточия указывается цвет*/
+	/*opacity: .9;*//*добавляет прозрачности элементу, от 0 (полностью прозрачный) до 1 (не прозрачный)*/
 	}
 
 ul {
 	margin: 0;
-	padding: 0;
+	/*padding: 0;*/
 	}
 
 nav ul li {
+	position: relative;
+	float:left;
+	padding: 20px;
 	list-style: none;
 	font-size: 16pt;
-	display: block;
 	transition: .3s;
 	}
 	
