@@ -154,8 +154,6 @@ nav ul li:hover {
 	}
 
 .alien_head1 {
-	margin: 0;
-	padding: 0;
 	width: 150px;
 	height: 175px;
 	border: 2px solid rgba(0, 0, 0, 1);
@@ -166,8 +164,6 @@ nav ul li:hover {
 	left: 40%;
 }
 .alien_head2 {
-	margin: 0;
-	padding: 0;
 	width: 100px;
 	height: 200px;
 	border-radius: 80px/100px;
@@ -177,8 +173,6 @@ nav ul li:hover {
 	left: 17%;
 }
 .alien_left_eye {
-	margin: 0;
-	padding: 0;
 	width: 65px;
 	height: 55px;
 	border-radius: 100% 20%;
@@ -189,8 +183,6 @@ nav ul li:hover {
 	border:5px solid grey;
 }
 .alien_right_eye {
-	margin: 0;
-	padding: 0;
 	width: 55px;
 	height: 65px;
 	border-radius: 100% 20%;
@@ -203,8 +195,6 @@ nav ul li:hover {
 	
 }
 .alien_right_nose {
-	margin: 0;
-	padding: 0;
 	width: 10px;
 	height: 20px;
 	border-radius: 100% 20%;
@@ -216,8 +206,6 @@ nav ul li:hover {
 	box-shadow: 0 0 5px black;
 }
 .alien_left_nose {
-	margin: 0;
-	padding: 0;
 	width: 10px;
 	height: 20px;
 	border-radius: 100% 20%;
@@ -229,8 +217,6 @@ nav ul li:hover {
 	box-shadow: 0 0 5px black;
 }
 .alien_mouth {
-	margin: 0;
-	padding: 0;
 	width: 35px;
 	height: 20px;
 	border-radius: 80px/100px;
@@ -240,8 +226,4 @@ nav ul li:hover {
 	position: relative;
 	left: 31%;
 	bottom: 12%;
-}
-.alien {
-	margin: 0;
-	padding: 0;
 }
