@@ -152,3 +152,96 @@ nav ul li {
 nav ul li:hover {
 	transform: scale(1.2);
 	}
+
+.alien_head1 {
+	margin: 0;
+	padding: 0;
+	width: 150px;
+	height: 175px;
+	border: 2px solid rgba(0, 0, 0, 1);
+	border-bottom: none;
+	border-radius: 80px 80px 90px 90px;
+	background-color: grey;
+	position: relative;
+	left: 40%;
+}
+.alien_head2 {
+	margin: 0;
+	padding: 0;
+	width: 100px;
+	height: 200px;
+	border-radius: 80px/100px;
+	border-bottom: 2px solid black;
+	background-color: grey;
+	position: relative;
+	left: 17%;
+}
+.alien_left_eye {
+	margin: 0;
+	padding: 0;
+	width: 65px;
+	height: 55px;
+	border-radius: 100% 20%;
+	background-color: black;
+	position: relative;	top: 64px;
+	left: 55px;
+	transform: rotate(15deg);
+	border:5px solid grey;
+}
+.alien_right_eye {
+	margin: 0;
+	padding: 0;
+	width: 55px;
+	height: 65px;
+	border-radius: 100% 20%;
+	background-color: black;
+	position: relative;
+	top: -5px;
+	right: 25px;
+	transform: rotate(75deg);
+	border:5px solid grey;
+	
+}
+.alien_right_nose {
+	margin: 0;
+	padding: 0;
+	width: 10px;
+	height: 20px;
+	border-radius: 100% 20%;
+	background-color: black;
+	position: relative;
+	left: 35px;
+	bottom: 30px;
+	transform: rotate(175deg);
+	box-shadow: 0 0 5px black;
+}
+.alien_left_nose {
+	margin: 0;
+	padding: 0;
+	width: 10px;
+	height: 20px;
+	border-radius: 100% 20%;
+	background-color: black;
+	position: relative;
+	left: 50px;
+	top: -10px;
+	transform: rotate(340deg);
+	box-shadow: 0 0 5px black;
+}
+.alien_mouth {
+	margin: 0;
+	padding: 0;
+	width: 35px;
+	height: 20px;
+	border-radius: 80px/100px;
+	border-bottom: 8px solid black;
+	border-top: none;
+	background-color: grey;
+	position: relative;
+	left: 31%;
+	bottom: 12%;
+}
+.alien {
+	margin: 0;
+	padding: 0;
+}
