@@ -161,7 +161,7 @@ nav ul li:hover {
 	border-radius: 80px 80px 90px 90px;
 	background-color: grey;
 	position: relative;
-	left: 40%;
+	left: 44%;
 }
 .alien_head2 {
 	width: 100px;
@@ -176,54 +176,79 @@ nav ul li:hover {
 	width: 65px;
 	height: 55px;
 	border-radius: 100% 20%;
-	background-color: black;
-	position: relative;	top: 64px;
-	left: 55px;
-	transform: rotate(15deg);
+	background: linear-gradient(140deg,black 55%, white);
+	position: absolute;
+	top: 25%;
+	left: 55%;
 	border:5px solid grey;
 }
 .alien_right_eye {
-	width: 55px;
-	height: 65px;
-	border-radius: 100% 20%;
-	background-color: black;
-	position: relative;
-	top: -5px;
-	right: 25px;
-	transform: rotate(75deg);
+	width: 65px;
+	height: 55px;
+	border-radius: 20% 100%;
+	background: linear-gradient(220deg,black 55%, white);
+	position: absolute;
+	top: 25%;
+	right: 58%;
 	border:5px solid grey;
-	
 }
 .alien_right_nose {
 	width: 10px;
 	height: 20px;
 	border-radius: 100% 20%;
 	background-color: black;
-	position: relative;
-	left: 35px;
-	bottom: 30px;
+	position: absolute;
+	left: 37%;
+	bottom: 30%;
 	transform: rotate(175deg);
 	box-shadow: 0 0 5px black;
 }
 .alien_left_nose {
 	width: 10px;
 	height: 20px;
-	border-radius: 100% 20%;
+	border-radius: 20% 100%;
 	background-color: black;
-	position: relative;
-	left: 50px;
-	top: -10px;
-	transform: rotate(340deg);
+	position: absolute;
+	right: 37%;
+	bottom: 30%;
+	transform: rotate(185deg);
 	box-shadow: 0 0 5px black;
 }
 .alien_mouth {
 	width: 35px;
-	height: 20px;
+	height: 5px;
 	border-radius: 80px/100px;
-	border-bottom: 8px solid black;
-	border-top: none;
-	background-color: grey;
-	position: relative;
+	background-color: black;
+	position: absolute;
 	left: 31%;
-	bottom: 12%;
+	bottom: 10%;
+}
+.alien_smile {
+	width: 40px;
+	height: 30px;
+	border-radius: 15px;
+	border-bottom: 5px solid black;
+	background-color: gray;
+	position: absolute;
+	left: 29%;
+	bottom: 10%;
+	display: none;
+}
+.alien:hover .alien_head1 .alien_head2 .alien_smile {
+	display: block;
+}
+.alien:hover .alien_head1 .alien_head2 .alien_mouth {
+	display: none;
+}
+
+@keyframes Morganie {
+	from {transform: scale(1);}
+	49% {transform: scaleY(1);}
+	50% {transform: scaleY(0.1);}
+	51% {transform: scale(1);}
+	to {transform: scaleY(1);}
+}
+
+.alien_left_eye, .alien_right_eye {
+	animation: Morganie 8s infinite;
 }
