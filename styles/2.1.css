@@ -11,6 +11,8 @@
 	/*так можно писать в CSS коментарии*/
 
 header {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
 	}
 	
@@ -28,6 +30,7 @@ h1 {font-family: Monotype Corsiva;
 	color: gainsboro;
 	text-shadow: 3px 3px 5px black;/*тень у текста 0 - смещение по оси х, 5px - смещение по оси у, 10рх - радиус размытия*, black - цвет тени*/
 	/*font-weight: normal;*//*задает для заголовка нормальную жирность текста*/
+	margin: 0;
 	}
 	
 a {
@@ -122,10 +125,8 @@ tfoot {
 		text-align: right;
 	}
 			
-nav {
+.menu {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	padding: 0 8%;
 	border: black medium double;
 	border-radius: 10px;
@@ -133,23 +134,33 @@ nav {
 	background-color: rgba(255, 228, 196, .3);
 	/*background-color: gray;*//*добавляет заливку элементу, после двоеточия указывается цвет*/
 	/*opacity: .9;*//*добавляет прозрачности элементу, от 0 (полностью прозрачный) до 1 (не прозрачный)*/
+	justify-content: space-between;
 	}
 
-ul {
-	margin: 0;
-	/*padding: 0;*/
+@media screen and (max-width: 650px) {
+	.menu {
+		display: inline-flex;
+		flex-direction: column;
+		padding: 0;
+		margin-top: 30px;
 	}
+	.giper {
+		display: inline-flex;
+		padding: 0;
+	}
+}
 
-nav ul li {
+.menu div {
 	position: relative;
 	float:left;
-	padding: 20px;
+	padding: 5px;
+
 	list-style: none;
 	font-size: 16pt;
 	transition: .3s;
 	}
 	
-nav ul li:hover {
+.menu div:hover {
 	transform: scale(1.2);
 	}
 
