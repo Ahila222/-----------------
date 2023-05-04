@@ -13,7 +13,6 @@
 header {
 	display: flex;
 	flex-direction: column;
-	text-align: center;
 	}
 	
 main {text-align: justify;}/*выравнивание шрифта по ширине*/
@@ -27,6 +26,7 @@ footer a {
 h1 {font-family: Monotype Corsiva;
 	font-size: 32pt;
 	font-weight: 900;
+	text-align: center;
 	color: gainsboro;
 	text-shadow: 3px 3px 5px black;/*тень у текста 0 - смещение по оси х, 5px - смещение по оси у, 10рх - радиус размытия*, black - цвет тени*/
 	/*font-weight: normal;*//*задает для заголовка нормальную жирность текста*/
@@ -137,24 +137,28 @@ tfoot {
 	justify-content: space-between;
 	}
 
+.soderjanie {display: none;}
+
 @media screen and (max-width: 650px) {
 	.menu {
-		display: inline-flex;
+		display: flex;
 		flex-direction: column;
 		padding: 0;
 		margin-top: 30px;
+		width: 100px;
+
 	}
-	.giper {
-		display: inline-flex;
-		padding: 0;
-	}
+	.giper {display: none;}
+
+	.column {display: flex;}
+
+	.soderjanie {display: block;}
 }
 
 .menu div {
 	position: relative;
 	float:left;
 	padding: 5px;
-
 	list-style: none;
 	font-size: 16pt;
 	transition: .3s;
